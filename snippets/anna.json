@@ -1,0 +1,92 @@
+{
+  "Add Instruction": {
+    "prefix": "add",
+    "body": ["add ${1:rd} ${2:rs1} ${3:rs2}"],
+    "description": "Add two registers"
+  },
+  "Subtract Instruction": {
+    "prefix": "sub",
+    "body": ["sub ${1:rd} ${2:rs1} ${3:rs2}"],
+    "description": "Subtract two registers"
+  },
+  "AND Instruction": {
+    "prefix": "and",
+    "body": ["and ${1:rd} ${2:rs1} ${3:rs2}"],
+    "description": "Bitwise AND"
+  },
+  "OR Instruction": {
+    "prefix": "or",
+    "body": ["or ${1:rd} ${2:rs1} ${3:rs2}"],
+    "description": "Bitwise OR"
+  },
+  "NOT Instruction": {
+    "prefix": "not",
+    "body": ["not ${1:rd} ${2:rs1}"],
+    "description": "Bitwise NOT"
+  },
+  "Shift Instruction": {
+    "prefix": "shf",
+    "body": ["shf ${1:rd} ${2:rs1} ${3:imm6}"],
+    "description": "Shift instruction"
+  },
+  "Load Lower Immediate": {
+    "prefix": "lli",
+    "body": ["lli ${1:rd} ${2:imm8}"],
+    "description": "Load lower immediate"
+  },
+  "Load Upper Immediate": {
+    "prefix": "lui",
+    "body": ["lui ${1:rd} ${2:imm8}"],
+    "description": "Load upper immediate"
+  },
+  "Load Word": {
+    "prefix": "lw",
+    "body": ["lw ${1:rd} ${2:rs1} ${3:imm6}"],
+    "description": "Load word from memory"
+  },
+  "Store Word": {
+    "prefix": "sw",
+    "body": ["sw ${1:rd} ${2:rs1} ${3:imm6}"],
+    "description": "Store word to memory"
+  },
+  "Branch if Equal to Zero": {
+    "prefix": "bez",
+    "body": ["bez ${1:rd} ${2:offset}"],
+    "description": "Branch if equal to zero"
+  },
+  "Branch if Greater than Zero": {
+    "prefix": "bgz",
+    "body": ["bgz ${1:rd} ${2:offset}"],
+    "description": "Branch if greater than zero"
+  },
+  "Add Immediate": {
+    "prefix": "addi",
+    "body": ["addi ${1:rd} ${2:rs1} ${3:imm6}"],
+    "description": "Add immediate value"
+  },
+  "Jump and Link Register": {
+    "prefix": "jalr",
+    "body": ["jalr ${1:rd} ${2:rs1}"],
+    "description": "Jump and link register"
+  },
+  "Input Instruction": {
+    "prefix": "in",
+    "body": ["in ${1:rd}"],
+    "description": "Input from I/O"
+  },
+  "Output Instruction": {
+    "prefix": "out",
+    "body": ["out ${1:rd}"],
+    "description": "Output to I/O"
+  },
+  "Halt Directive": {
+    "prefix": ".halt",
+    "body": [".halt"],
+    "description": "Halts execution"
+  },
+  "Fill Directive": {
+    "prefix": ".fill",
+    "body": [".fill ${1:value}"],
+    "description": "Fills memory with value or label reference"
+  }
+}

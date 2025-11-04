@@ -1,0 +1,72 @@
+{
+  "scopeName": "source.anna",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#labels" },
+    { "include": "#directives" },
+    { "include": "#opcodes" },
+    { "include": "#registers" },
+    { "include": "#immediates" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.number-sign.anna",
+          "match": "#.*$"
+        }
+      ]
+    },
+    "labels": {
+      "patterns": [
+        {
+          "name": "entity.name.label.anna",
+          "match": "\\b[A-Za-z_][A-Za-z0-9_]*:"
+        }
+      ]
+    },
+    "directives": {
+      "patterns": [
+        {
+          "name": "keyword.directive.anna",
+          "match": "\\.(?:fill|halt)\\b"
+        }
+      ]
+    },
+    "opcodes": {
+      "patterns": [
+        {
+          "name": "keyword.control.instruction.anna",
+          "match": "\\b(?:add|sub|and|or|not|shf|lli|lui|lw|sw|bez|bgz|addi|jalr|in|out)\\b"
+        }
+      ]
+    },
+    "registers": {
+      "patterns": [
+        {
+          "name": "variable.language.register.anna",
+          "match": "\\br[0-7]\\b"
+        }
+      ]
+    },
+    "immediates": {
+      "patterns": [
+        {
+          "name": "constant.numeric.hex.anna",
+          "match": "0x[0-9A-Fa-f]+"
+        },
+        {
+          "name": "constant.numeric.decimal.anna",
+          "match": "\\b-?[0-9]+\\b"
+        },
+        {
+          "name": "variable.other.labelref.anna",
+          "match": "&[A-Za-z_][A-Za-z0-9_]*"
+        }
+      ]
+    }
+  },
+  "scopeNameComment": "ANNA assembly language highlighting",
+  "fileTypes": ["anna"],
+  "uuid": "anna-syntax-2025"
+}

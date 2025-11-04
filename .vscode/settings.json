@@ -1,0 +1,34 @@
+{
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword.control.instruction.anna",
+        "settings": { "foreground": "#DCDCAA" }  // opcodes: like functions
+      },
+      {
+        "scope": "variable.language.register.anna",
+        "settings": { "foreground": "#4FC1FF" }  // registers: like variables
+      },
+      {
+        "scope": "keyword.directive.anna",
+        "settings": { "foreground": "#C586C0" }  // .fill/.halt: like preprocessor
+      },
+      {
+        "scope": "entity.name.label.anna",
+        "settings": { "foreground": "#DCDCAA", "fontStyle": "bold" }  // labels: soft yellow (function-style)
+      },
+      {
+        "scope": "constant.numeric.decimal.anna",
+        "settings": { "foreground": "#B5CEA8" }  // immediates
+      },
+      {
+        "scope": "constant.numeric.hex.anna",
+        "settings": { "foreground": "#B5CEA8" }
+      },
+      {
+        "scope": "comment.line.number-sign.anna",
+        "settings": { "foreground": "#6A9955", "fontStyle": "italic" }  // comments: green
+      }
+    ]
+  }
+}

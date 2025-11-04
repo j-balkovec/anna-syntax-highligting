@@ -1,0 +1,6 @@
+# Example program
+loop:
+    add r1 r2 r3
+    sw r3 r0 0x10
+    bez r1 &loop
+    .halt
